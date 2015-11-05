@@ -72,7 +72,7 @@ for a = [1:65]
         [minimum index] = min(norm);
         owner = (index-1)/3;
         owner = floor(owner) + 1;
-        owner
+        
        %test if it is right owner or not
        if owner == a
            n = n+1;
@@ -86,4 +86,5 @@ r = recogRate.*100;
 string = ['Recognition rate = ', num2str(r), '%%'];
 fprintf(string);
 
+% function end
 end

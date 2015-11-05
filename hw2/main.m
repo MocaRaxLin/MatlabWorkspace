@@ -15,5 +15,5 @@ clc
 %  index
 % o = (index-1)/3
 % o = floor(o) + 1
-% [recogRate]= recog_pca(50);
-OptimizeParam_pca();
+[recogRate]= recog_pca(10);
+
