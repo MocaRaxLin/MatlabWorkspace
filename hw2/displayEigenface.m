@@ -23,8 +23,12 @@ x = i - double(t);
 G = x'*x;
 
 %all eigenvectors of sigma = x(x^T)
+%sort eigenvectors by the corresponding absoulte eigenvalue
 [w D]=eig(G);
+D = sum(D);
+[D index] = sort(abs(D));
 v = x*w;
+v = v(:,index);
 
 %normalize column vectors in v
 v = normc(v);
