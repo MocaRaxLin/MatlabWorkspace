@@ -74,3 +74,5 @@ recogRate = n/N;
 r = recogRate*100;
 string = ['The overall recognition rate with FLDA is ', num2str(r), '%%'];
 fprintf(string);
+
+% end script

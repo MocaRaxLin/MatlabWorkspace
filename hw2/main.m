@@ -9,7 +9,10 @@ A = [1,2,3,4,5,6,7,8,9;
 %          6,5,4,3,2,1;
 %          1,2,3,4,5,6];
 s = size(A, 2);
-C = A(:, 5:s)
+for a = 1:3
+    CC(a) = a;
+end
+CC
 % d = sum(d);
 % [vd ,index] = sort(abs(d));
 % v = v(index)
